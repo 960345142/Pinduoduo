@@ -1,0 +1,188 @@
+#download {
+  position: relative;
+  margin-top: 107px;
+  text-align: center;
+}
+#download .pdd-download-qrcode {
+  position: absolute;
+  left: 47.9%;
+  top: 54%;
+  width: 8%;
+  height: auto;
+}
+#download .pdd-download-btn {
+  position: absolute;
+  left: 47.5%;
+  top: 77%;
+  width: 8.8%;
+  height: 6%;
+  cursor: pointer;
+}
+#download .pdd-download-mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.45;
+  z-index: 999;
+  display:none;
+}
+#download .pdd-download-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -285px;
+  margin-top: -185px;
+  width: 560px;
+  height: 360px;
+  background-color: #fff;
+  border: 5px solid rgba(255, 255, 255, 0.45);
+  background-clip: padding-box;
+  overflow: hidden;
+  z-index: 999;
+  display:none;
+}
+#download .pdd-download-modal .title {
+  font-size: 14px;
+  line-height: 2;
+  text-indent: 12px;
+  text-align: left;
+  border-bottom: 2px solid #ed435b;
+}
+#download .pdd-download-modal .close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+#download .pdd-download-modal .ico-group {
+  height: 111px;
+  padding-left: 45px;
+  padding-top: 39px;
+  overflow: hidden;
+}
+#download .pdd-download-modal .ico-group .platform {
+  position: relative;
+  float: left;
+  margin: 0 48px;
+}
+#download .pdd-download-modal .ico-group .platform p {
+  font-size: 12px;
+  line-height: 3;
+}
+#download .pdd-download-modal .ico-group .platform .ico {
+  width: 60px;
+  height: 60px;
+}
+#download .pdd-download-modal .ico-group .platform .cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+ /* background-color: rgba(255, 255, 255,0);*/
+  display:none;
+}
+#download .pdd-download-modal .ico-group .platform .cursor {
+  width: 23px;
+  height: 12px;
+  margin: 3px auto 0 auto;
+  display:none;
+}
+#download .pdd-download-modal .bottom {
+  position: relative;
+  background-color: #f0f0f0;
+}
+#download .pdd-download-modal .bottom .wrapper {
+  padding: 54px 80px;
+}
+#download .pdd-download-modal .bottom .wrapper .pop-btn {
+  width: 168px;
+  height: 48px;
+  cursor: pointer;
+}
+#download .pdd-download-modal .bottom .wrapper .tip {
+  width: 168px;
+  font-size: 14px;
+  line-height: 2.9;
+}
+#download .pdd-download-modal .bottom .wrapper .download-qrcode {
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  width: 130px;
+  height: 130px;
+}
+
+
+.slideInLeft1,.slideInLeft2,.slideInLeft3{
+  display: none;
+}
+@keyframes slideInLeft1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-600px);
+    -ms-transform: translateX(-600px);
+    transform: translateX(-600px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.slideInLeft1 {
+  -webkit-animation-name: slideInLeft1;
+  animation-name: slideInLeft1;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInLeft2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-600px);
+    -ms-transform: translateX(-600px);
+    transform: translateX(-600px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.slideInLeft2 {
+  -webkit-animation-name: slideInLeft2;
+  animation-name: slideInLeft2;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@keyframes slideInLeft3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-600px);
+    -ms-transform: translateX(-600px);
+    transform: translateX(-600px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.slideInLeft3 {
+  -webkit-animation-name: slideInLeft3;
+  animation-name: slideInLeft3;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}

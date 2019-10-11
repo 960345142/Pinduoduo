@@ -1,0 +1,108 @@
+#index .banner {
+  margin: 107px auto 0 auto;
+}
+#index .body {
+  width: 1200px;
+  margin: 77px auto 30px auto;
+}
+#index .body .title-group {
+  overflow: hidden;
+  border-bottom: 1px solid #c1c1c1;
+  padding-bottom: 17px;
+  margin-top: 55px;
+  margin-bottom: 45px;
+}
+#index .body .title-group .title {
+  float: left;
+  color: #363636;
+  font-size: 20px;
+}
+#index .body .title-group .more {
+  float: right;
+  color: #868686;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+#index .body .content-group {
+  overflow: hidden;
+}
+#index .body .content-group .cat-wrap {
+  float: left;
+  background-color: #fff;
+  padding: 14px;
+  margin-right: 17px;
+  margin-bottom: 17px;
+}
+#index .body .content-group .cat-wrap:nth-child(4) {
+  margin-right: 0;
+}
+#index .body .content-group .cat-wrap:hover {
+  filter: alpha(opacity=70);
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+#index .body .content-group .cat-wrap .cat {
+  width: auto;
+  height: auto;
+}
+#index .body .content-group .subject-wrap {
+  float: left;
+  background-color: #fff;
+  padding: 10px;
+  margin-right: 45px;
+  margin-bottom: 45px;
+}
+#index .body .content-group .subject-wrap:nth-child(2n) {
+  margin-right: 0;
+}
+#index .body .content-group .subject-wrap:hover {
+  filter: alpha(opacity=70);
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+#index .body .content-group .subject-wrap .subject {
+  width: 556px;
+  height: 276px;
+}
+#index .body .content-group .subject-wrap .goods-group {
+  border: 1px solid #f6f6f6;
+  overflow: hidden;
+}
+#index .body .content-group .subject-wrap .goods-group .goods {
+  background-color: #fff;
+  float: left;
+  margin: 0 12px;
+  width: 160px;
+  position: relative;
+}
+#index .body .content-group .subject-wrap .goods-group .goods .img {
+  width: 125px;
+  height: 125px;
+  margin: 7px auto;
+}
+#index .body .content-group .subject-wrap .goods-group .goods .title {
+  color: #111;
+  font-size: 12px;
+  line-height: 18px;
+  height: 36px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#index .body .content-group .subject-wrap .goods-group .goods .price {
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+}
+#index .body .content-group .subject-wrap .goods-group .goods .price .group-price {
+  color: #111;
+  font-size: 16px;
+}
+#index .body .content-group .subject-wrap .goods-group .goods .price .market-price {
+  color: #cbcbcb;
+  font-size: 14px;
+  text-decoration: line-through;
+}

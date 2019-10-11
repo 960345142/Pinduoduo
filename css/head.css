@@ -1,0 +1,97 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+img {
+  display: block;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+ul {
+  padding-inline-start: 0;
+}
+.do-not-display {
+  display: none;
+}
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 103px;
+  z-index: 999;
+  background-color: #fff;
+  border-bottom: 4px solid #ed435b;
+}
+.QQ {
+  margin: 0 auto;
+  width: 1240px;
+  overflow: hidden;
+  position: relative;
+}
+.logo {
+  float: left;
+  height: auto;
+  margin: 21px 0 21px 0;
+  max-width: 180px;
+  width: 15%;
+}
+.logo img {
+  width: 100%;
+  cursor: pointer;
+}
+.qq {
+  color: #6c6c6c;
+  float: right;
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  right: 0;
+}
+.q1 {
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  border-right: 1px solid #6c6c6c;
+}
+.q11 {
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.red-color {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fc475d;
+}
+.q1:last-child {
+  border: none;
+}
+.q1:last-child .q11 {
+  margin-right: 0!important;
+}
+.q1:first-child .q11 {
+  margin-left: 0!important;
+}
+/*.pdd-body {
+  width: 1200px;
+  margin: 107px auto 0 auto;
+  background-color: #fff;
+}*/
