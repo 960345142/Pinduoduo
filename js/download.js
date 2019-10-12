@@ -7,9 +7,10 @@ $("#qwe").onclick = function(event){
 	$("#cursor1").style.display = "block";
 	$("#qq1").style.opacity = "1";
 	$(".bottom").style.display = "block";
-		$(".slideInLeft1").style.display = "block";
-	
+		$(".slideInLeft1").style.display = "block";	
 }
+
+
 $("#close-btn").onclick = function(event){
 	var evt = event || window.event;
 
@@ -26,6 +27,8 @@ $("#close-btn").onclick = function(event){
 	$("#qq3").style.opacity = "0.45";
 	
 }
+
+
 
 $("#ico1").onmouseover = function(event){
 	var evt = event || window.event;

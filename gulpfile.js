@@ -1,26 +1,39 @@
 const gulp=require("gulp");
-const sass=require("gulp-sass");
+const uglify = require("gulp-uglify");
+const minifycss = require("gulp-minify-css");
+const imagemin = require("gulp-imagemin");
+const sass = require("gulp-sass");
+
 
 
 //监听任务
-gulp.task("watchall",async()=>{
-	//监听html,进行复制
-	gulp.watch("*.html",async()=>{
-		gulp.src("*.html")
-		.pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoduo"))
-	});
+gulp.task("watchall",async ()=>{
+    //定义一个监听器，监听文件是否有改变，如果有改变，则自动拷贝。
+    gulp.watch("*.html",async ()=>{
+        //把当前目录下的所有html文件拷贝至目录：dist
+        gulp.src("*.html")
+        .pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoudo"));
+    });
 
-	//监听sass文件
-	gulp.watch("sass/**/*",async()=>{
-		gulp.src("sass/**/*")
-		.pipe(sass())
-		.pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoduo\\css"))
-	})
+      gulp.watch("js/*.js",async ()=>{
+        gulp.src("js/*.js")
+        .pipe(uglify())
+        .pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoudo\\js"));
+    });
+
+      gulp.watch("css/*.css",async ()=>{
+        gulp.src("css/*.css")
+        .pipe(minifycss())
+        .pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoudo\\css"));
+    });
+      gulp.watch("img/**/*",async ()=>{
+        gulp.src("img/**/*")
+        .pipe(imagemin())
+        .pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoudo\\img"));
+    });
+      gulp.watch("sass/**/*.scss",async ()=>{
+        gulp.src("sass/**/*.scss")
+        .pipe(sass())
+        .pipe(gulp.dest("C:\\Pinduoduo\\css"));
+    });
 })
-
-// var gulp = require("gulp");
-
-// gulp.task("copy-html", async function(){
-// 	gulp.src("./**/**")
-// 	.pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoduo"));
-// });

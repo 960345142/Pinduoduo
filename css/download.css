@@ -1,7 +1,10 @@
 #download {
   position: relative;
+  
   margin-top: 107px;
+
   text-align: center;
+
 }
 #download .pdd-download-qrcode {
   position: absolute;
