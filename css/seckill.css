@@ -69,6 +69,14 @@
   margin-top: 20px;
   margin-right: 46px;
 }
+#subject .banner-group .icon-group .icon .icon-img{
+
+  width: 44px;
+  height: 44px;
+  margin-left: 6px;
+  background: url(../img/extra.png);
+}
+
 #subject .banner-group .icon-group .icon .text {
   font-size: 14px;
   color: #8d8d8d;
@@ -107,19 +115,24 @@
 #subject .goods-group .goods:nth-child(4n) {
   margin-right: 0;
 }
-#subject .goods-group .goods .img {
+#subject .goods-group .goods #guo{
+  margin: 28px auto;
   width: 220px;
   height: 220px;
-  margin: 28px auto;
+}
+#subject .goods-group .goods .img {
   display: block;
 }
 #subject .goods-group .goods .qrcode {
   position: absolute;
-  left: 28px;
-  top: 28px;
   width: 220px;
   height: 220px;
-  display: none;
+  left: 28px;
+  top: 28px;
+  display:none;
+}
+#subject .goods-group .goods #guo:hover .qrcode{
+  display: block;
 }
 #subject .goods-group .goods .title {
   color: #686868;
