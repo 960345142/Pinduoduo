@@ -111,6 +111,7 @@
   width: 220px;
   height: 220px;
   margin: 28px auto;
+  display: block;
 }
 #subject .goods-group .goods .qrcode {
   position: absolute;
