@@ -1,0 +1,521 @@
+#campus{
+  margin-top: 107px;
+}
+.nav {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.nav li {
+  width: 600px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  color: #686868;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.nav1 li{
+  float: left;
+}
+.nav .focus {
+  color: #f04055;
+  font-weight: bold;
+  border-bottom: 4px solid #ed435b;
+}
+.tab .pdd-banner-wrapper {
+  width: 100%;
+}
+.poster {
+  width: 750px;
+  height: 420px;
+}
+.play-video-wrapper {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: #000;
+}
+.play-video-wrapper #my-video {
+  width: 894px;
+  height: 503px;
+}
+.play-video-wrapper .to-close {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: -25px;
+  cursor: pointer;
+  z-index: 100;
+}
+.play-video-wrapper .play-video-tag {
+  padding: 12px 17px 17px 17px;
+  font-family: "PingFang SC Medium", 'Arial Narrow', Arial, sans-serif;
+  font-size: 29px;
+  color: #666666;
+}
+.pdd-campus-content {
+  position: relative;
+  width: 1200px;
+  margin: 20px auto;
+  padding: 1px 0;
+  background-color: #fff;
+}
+.pdd-campus-content .pdd-recruit {
+  margin-top: 90px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content {
+  margin-top: 74px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-nav {
+  margin: 0 50px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-nav .pdd-recruit-nav-img {
+  margin: 0 24px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-nav .pdd-recruit-nav-img img {
+  display: inline-block;
+  width: 240px;
+  height: 130px;
+  margin-right: 25.5px;
+  cursor: pointer;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-nav .pdd-recruit-nav-img img:last-child {
+  margin-right: 0;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-nav .pdd-recruit-nav-content {
+  text-align: left;
+  padding: 25px;
+  background-color: #fafafa;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-nav .pdd-recruit-nav-content p {
+  height: 18px;
+  line-height: 18px;
+  margin-bottom: 14px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-nav .pdd-recruit-nav-content label {
+  font-weight: bold;
+  font-size: 18px;
+  color: #666666;
+  vertical-align: top;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-nav .pdd-recruit-nav-content span {
+  font-size: 15px;
+  color: #686868;
+  display: inline-block;
+  width: 950px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position {
+  margin: 0 50px;
+  overflow: hidden;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .nav {
+  margin-bottom: 40px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .nav li {
+  width: 246px;
+  color: #686868;
+  font-size: 24px;
+  font-weight: bold;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .nav .focus {
+  color: #f04055;
+  border-bottom: 4px solid #ed435b;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-nav {
+  cursor: pointer;
+  float: left;
+  box-sizing: border-box;
+  width: 325px;
+  border-top: 1px solid #eaeaea;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-nav div {
+  box-sizing: border-box;
+  border-bottom: 1px solid #eaeaea;
+  overflow: hidden;
+  width: 100%;
+  height: 110px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-nav .tec-pos-div {
+  height: 110px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-nav .pos-click {
+  background-color: #686868;
+  color: #fff;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-nav .pos-hover {
+  background-color: #fafafa;
+  color: #686868;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-nav .pos {
+  background-color: #fff;
+  color: #686868;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-nav .non-tec-pos-div {
+  height: 80px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-nav img {
+  float: left;
+  margin: 10px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-nav .tec-pos-img {
+  width: 90px;
+  height: 90px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-nav .non-tec-pos-img {
+  width: 60px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-nav p {
+  float: left;
+  font-size: 20px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-nav .tec-pos-p {
+  margin: 0;
+  line-height: 110px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-nav .non-tec-pos-p {
+  line-height: 80px;
+  margin-left: 4px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-detail {
+  width: 750px;
+  height: 990px;
+  padding: 25px 25px 0 25px;
+  background-color: #fafafa;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-detail .pdd-recruit-position-detail-title {
+  padding-left: 7px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #686868;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-detail .pdd-recruit-position-detail-subtitle {
+  font-size: 18px;
+  color: #f04055;
+  margin-top: 30px;
+  margin-bottom: 14px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-detail .pdd-recruit-position-detail-text {
+  padding-left: 7px;
+  font-size: 16px;
+  color: #686868;
+  line-height: 28px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-detail .pdd-recruit-position-detail-mail {
+  padding-left: 7px;
+  margin-top: 25px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-detail .pdd-recruit-position-detail-mail p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #686868;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-position .pdd-recruit-position-detail .pdd-recruit-position-submit {
+  margin: 0 auto;
+  margin-top: 48px;
+  height: 58px;
+  width: 246px;
+  background-color: #f04055;
+  color: #fff;
+  text-align: center;
+  line-height: 58px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title {
+  margin: 0 50px;
+  border-bottom: 1px solid #eaeaea;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .pdd-recruit-title-nav {
+  margin-top: 62px;
+  margin-left: 10px;
+  width: 98.21%;
+  height: 40px;
+  line-height: 40px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .pdd-recruit-title-nav .pdd-recruit-title-nav-logo {
+  vertical-align: text-bottom;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .pdd-recruit-title-nav .pdd-recruit-title-nav-label {
+  font-size: 22px;
+  color: #686868;
+  font-family: "Arial", "Microsoft YaHei", "\9ED1\4F53", "\5B8B\4F53", sans-serif;
+  margin-right: 18px;
+  margin-left: 30px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .pdd-recruit-title-nav .pdd-recruit-title-nav-year {
+  display: inline-block;
+  width: 175px;
+  text-align: center;
+  font-size: 22px;
+  color: #686868;
+  font-family: "Arial", "Microsoft YaHei", "\9ED1\4F53", "\5B8B\4F53", sans-serif;
+  margin-right: 29px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .pdd-recruit-title-nav .pdd-recruit-title-nav-year:hover {
+  cursor: pointer;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .pdd-recruit-title-nav .pdd-recruit-title-nav-year-select {
+  display: inline-block;
+  background-color: #ef4155;
+  color: #fff;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .title {
+  margin: 68px 10px 48px 10px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .title li {
+  font-size: 0;
+  overflow: hidden;
+  display: inline-block;
+  width: 23.09%;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .title li img {
+  width: 100%;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .title li:not(:first-child) {
+  margin-left: 2.54%;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .recruit-position {
+  max-width: 1200px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .recruit-position .position {
+  width: 25%;
+  margin: 0 auto 28px auto;
+  display: inline-table;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .recruit-position .position li {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .recruit-position .position li .item-span {
+  font-family: "Arial", "Microsoft YaHei", "\9ED1\4F53", "\5B8B\4F53", sans-serif;
+  font-size: 20px;
+  color: #686868;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .recruit-position .position li .item-span:hover {
+  cursor: pointer;
+  font-family: "Arial", "Microsoft YaHei", "\9ED1\4F53", "\5B8B\4F53", sans-serif;
+  font-size: 20px;
+  color: #f04055;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .recruit-position .position li .null-item-span {
+  font-family: "Arial", "Microsoft YaHei", "\9ED1\4F53", "\5B8B\4F53", sans-serif;
+  font-size: 20px;
+  color: #686868;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-title .submit {
+  margin-bottom: 68px;
+  width: 338px;
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+  left: 50%;
+  margin-left: -169px;
+  background-color: #f04055;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Arial", "Microsoft YaHei", "\9ED1\4F53", "\5B8B\4F53", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-campus {
+  margin: 0 40px;
+  border-bottom: 1px solid #eaeaea;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-campus img {
+  padding: 68px 0;
+  margin: 0 auto;
+  display: block;
+  width: 91.67%;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-manito {
+  margin: 0 40px;
+  border-bottom: 1px solid #eaeaea;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-manito .pdd-recruit-manito-content {
+  margin: 70px 10px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-manito .pdd-recruit-manito-content .pdd-recruit-manito-content-text {
+  font-size: 16px;
+  color: #686868;
+  font-family: "Arial", "Microsoft YaHei", "\9ED1\4F53", "\5B8B\4F53", sans-serif;
+  line-height: 30px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-manito .pdd-recruit-manito-content .pdd-recruit-manito-content-video {
+  display: inline-block;
+  width: 22.73%;
+  margin-right: 30px;
+  margin-top: 25px;
+  vertical-align: top;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-manito .pdd-recruit-manito-content .pdd-recruit-manito-content-video .pdd-recruit-manito-content-video-video {
+  width: 100%;
+  position: relative;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-manito .pdd-recruit-manito-content .pdd-recruit-manito-content-video .pdd-recruit-manito-content-video-video .poster {
+  width: 100%;
+  cursor: pointer;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-manito .pdd-recruit-manito-content .pdd-recruit-manito-content-video .pdd-recruit-manito-content-video-video .play {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -21px;
+  margin-top: -21px;
+  cursor: pointer;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-manito .pdd-recruit-manito-content .pdd-recruit-manito-content-video .pdd-recruit-manito-content-video-title {
+  font-size: 16px;
+  color: #262626;
+  font-family: "Arial", "Microsoft YaHei", "\9ED1\4F53", "\5B8B\4F53", sans-serif;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 11px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-problem {
+  padding-bottom: 90px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-problem .problem {
+  margin: 68px 40px 0 40px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-problem .problem ul {
+  padding-left: 10px;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-problem .problem ul li {
+  margin-top: 30px;
+  list-style-type: none;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-problem .problem ul li .question {
+  font-size: 16px;
+  color: #f04055;
+  font-family: "Arial", "Microsoft YaHei", "\9ED1\4F53", "\5B8B\4F53", sans-serif;
+  font-weight: bold;
+}
+.pdd-campus-content .pdd-recruit .pdd-recruit-content .pdd-recruit-problem .problem ul li .answer {
+  font-size: 16px;
+  color: #686868;
+  font-family: "Arial", "Microsoft YaHei", "\9ED1\4F53", "\5B8B\4F53", sans-serif;
+  margin-top: 14px;
+}
+.pdd-recruit-companyinfo {
+  width: 1200px;
+  margin: 22px auto 100px auto;
+  background-color: #fff;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-text {
+  padding: 25px 45px;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-text div {
+  box-sizing: border-box;
+  width: 350px;
+  height: 510px;
+  padding: 35px;
+  background-color: #fafafa;
+  font-size: 20px;
+  color: #686868;
+  line-height: 34px;
+  display: inline-block;
+  margin-right: 25px;
+  overflow-y: auto;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-text div:last-child {
+  margin-right: 0;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-video {
+  overflow: hidden;
+  padding: 25px 50px;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-video .pdd-recruit-companyinfo-video-detail {
+  position: relative;
+  float: left;
+  width: 750px;
+  height: 420px;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-video .pdd-recruit-companyinfo-video-detail img {
+  width: 100%;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-video .pdd-recruit-companyinfo-video-detail .play {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -22px;
+  margin-top: -22px;
+  cursor: pointer;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-video .pdd-recruit-companyinfo-video-nav {
+  cursor: pointer;
+  float: right;
+  box-sizing: border-box;
+  width: 325px;
+  height: 420px;
+  border-top: 1px solid #eaeaea;
+  overflow-y: auto;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-video .pdd-recruit-companyinfo-video-nav > div {
+  box-sizing: border-box;
+  height: 120px;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #eaeaea;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-video .pdd-recruit-companyinfo-video-nav .video_click {
+  background-color: #686868;
+  color: #ffffff;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-video .pdd-recruit-companyinfo-video-nav .video_click img {
+  border: 1px solid #fff;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-video .pdd-recruit-companyinfo-video-nav .video_hover {
+  background-color: #fafafa;
+  color: #686868;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-video .pdd-recruit-companyinfo-video-nav .video {
+  background-color: #fff;
+  color: #686868;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-video .pdd-recruit-companyinfo-video-nav img {
+  float: left;
+  width: 150px;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-video .pdd-recruit-companyinfo-video-nav .title {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 8px 0 10px 12px;
+  height: 100px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-video .pdd-recruit-companyinfo-video-nav::-webkit-scrollbar {
+  width: 0;
+}
+.pdd-recruit-companyinfo .pdd-recruit-companyinfo-video .pdd-recruit-companyinfo-video-nav::-moz-scrollbar {
+  width: 0;
+}
+@media only screen and (max-width: 1400px) {
+  .play-video-wrapper {
+    top: 60%;
+  }
+  .play-video-wrapper #my-video {
+    width: 715px;
+    height: 402px;
+  }
+}

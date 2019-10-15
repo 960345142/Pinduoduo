@@ -1,31 +1,25 @@
 #proxy_administation {
   width: 1200px;
-  margin:107px auto 110px;
+  margin: 107px auto 110px;
   background-color: #ffffff;
   padding-bottom: 124px;
-  overflow: hidden;
-}
-#proxy_administation .pdd-red-title{
-  width: 308px;
-  height: 62px;
-  position: relative;
-  right: 18px;
-  margin: 70px 0;
-}
-#proxy_administation .nav img{
-  width: 300px;
-  height: 200px;
-  border:1px solid #d9d9d9;
-  float: left;
-}
-#proxy_administation .nav a:hover img{
-  border-color: red;
-}
-#proxy_administation .nav .nav-icon1{
-  margin-left: 100px;
-  margin-right: 47px;
-}
-#proxy_administation .nav .nav-icon3{
-  margin-right: 100px;
-  margin-left: 47px;
-}
+  overflow: hidden; }
+  #proxy_administation .pdd-red-title {
+    width: 308px;
+    height: 62px;
+    position: relative;
+    right: 18px;
+    margin: 70px 0; }
+  #proxy_administation .nav img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #d9d9d9;
+    float: left; }
+  #proxy_administation .nav a:hover img {
+    border-color: red; }
+  #proxy_administation .nav .nav-icon1 {
+    margin-left: 100px;
+    margin-right: 47px; }
+  #proxy_administation .nav .nav-icon3 {
+    margin-right: 100px;
+    margin-left: 47px; }
