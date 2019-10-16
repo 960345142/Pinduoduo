@@ -47,12 +47,12 @@
 				</a>
 			</li>
 			<li class="q1">
-				<a href="agriculture.html">
+				<a href="https://www.pinduoduo.com/home/agriculture/" target="_blank">
 					<span class="q11">爱心扶贫</span>
 				</a>
 			</li>
 			<li class="q1">
-				<a href="social.html">
+				<a href="https://www.pinduoduo.com/social.html" target="_blank">
 					<span class="q11">社会招聘</span>
 				</a>
 			</li>
@@ -102,7 +102,7 @@
 			<h1 style="color:#FFFFFF">欢迎登录</h1>
 		</header>
 		<div class="beg-login-main">
-			<form action="" class="layui-form" method="post">
+			<!-- <form action="" class="layui-form" method="post"> -->
 				<div class="layui-form-item">
 					<label class="beg-login-icon">
 					<i class="layui-icon">&#xe612;</i>
@@ -136,12 +136,12 @@
 					</div>
 					
 					<div class="beg-pull-right">
-						<button class="layui-btn layui-btn-radius" style="margin-top: 4%;" onClick="login();return false;">
-						<i class="layui-icon">&#xe650;</i> 登录
+						<button class="layui-btn layui-btn-radius" style="margin-top: 4%;" onclick="denglu(); return false;">
+						<i class="layui-icon" id="denglu">&#xe650;</i> 登录
 					</button>
 					</div>
 				</div>
-			</form>
+			<!-- </form> -->
 		</div>
 	</div>
 
@@ -177,13 +177,14 @@
 				</div>
 				<div class="layui-form-item">
 					<div class="beg-pull-left beg-login-remember" style="color:#FFFFFF;margin-top: 6%;">
-						<button class="layui-btn" onclick="register();return false;">
+						<button class="layui-btn" onclick="zhuce();return false;">
 						<i class="layui-icon">&#xe650;</i> 注册
 					</div>
 					
 					<div class="beg-pull-right">
 						<button class="layui-btn layui-btn layui-btn-primary" style="margin-top: 18%;" onClick="goto_login();return false;">
 						<i class="layui-icon">&#xe650;</i> 返回登录
+						<div id="messageBox"></div>
 					</button>
 					</div>
 				</div>
@@ -358,6 +359,38 @@
 </html>
 <script type="text/javascript">
 
+
+ function denglu(){
+
+	var result=login();
+	if(result){
+		//1、
+		let xhr = new XMLHttpRequest();
+
+		xhr.open("post","php/loginCheck.php",true);
+
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState==4 && xhr.status==200){
+				if(xhr.responseText=="1"){
+					location.href="index.html";
+				}else{
+					alert("亲，您的用户名或密码输入不正确，请重新输入") ;
+				}
+			}
+		}
+		//post方式：设置请求头
+		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		//post方式：把传给服务器端数据（键值对）放在send函数的参数里。
+		let sendstr = `username=${$("#username").val()}&userpass=${$("#password").val()}`;
+
+		xhr.send(sendstr);
+	}
+    
+}
+
+
+
+
 	function login(){
 		var username = $("#username").val();
 		var password = $("#password").val();
@@ -385,14 +418,43 @@
 			});
 			return false;
 		}
-		alert("登录成功");
+		return true;
 	}
+
+
 
 	function goto_register(){
 		$("#register").show();
 		$("#login").hide();
 		$("#reset").hide();
 	}
+
+
+function zhuce(){
+	var jii=register();
+	if(jii){
+		let xhr = new XMLHttpRequest();
+
+			xhr.open("post","php/zhuce.php",true);
+
+			xhr.onreadystatechange = function(){
+				if(xhr.readyState==4 && xhr.status==200){
+					if(xhr.responseText=="-1"){
+						alert("用户名被人使用");
+					}else if(xhr.responseText=="0"){
+						alert("注册失败");
+					}else if(xhr.responseText=="1"){
+						alert("注册成功，请前往登录");
+					}
+				}
+			}
+			//post方式：设置请求头
+			xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+			//post方式：把传给服务器端数据（键值对）放在send函数的参数里
+			let sendstr = `username=${$("#username_register").val()}&userpass=${$("#password_register").val()}&userreg=${$("#regcode_register").val()}`;
+			xhr.send(sendstr);
+	}	
+}
 
 	function register(){
 		var regcode_register = $("#regcode_register").val();
@@ -447,18 +509,29 @@
 			});
 			return false;
 		}
-		alert("注册成功");
+		return true;
 	}
+
+
+
+
 	function goto_login(){
 		$("#register").hide();
 		$("#login").show();
 		$("#reset").hide();
 	}
+
+
+
+
 	function goto_forget(){
 		$("#register").hide();
 		$("#login").hide();
 		$("#reset").show();
 	}
+
+
+
 
 	function reset_pwd(){
 		var regcode_reset = $("#regcode_reset").val();
@@ -515,4 +588,6 @@
 		}
 		alert("密码重置成功");
 	}
+
+
 </script>

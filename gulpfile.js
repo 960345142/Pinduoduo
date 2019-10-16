@@ -12,28 +12,33 @@ gulp.task("watchall",async ()=>{
     gulp.watch("*.html",async ()=>{
         //把当前目录下的所有html文件拷贝至目录：dist
         gulp.src("*.html")
-        .pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoudo"));
+        .pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoduo"));
     });
 
       gulp.watch("js/*.js",async ()=>{
         gulp.src("js/*.js")
         .pipe(uglify())
-        .pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoudo\\js"));
+        .pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoduo\\js"));
     });
 
       gulp.watch("css/*.css",async ()=>{
         gulp.src("css/*.css")
         .pipe(minifycss())
-        .pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoudo\\css"));
+        .pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoduo\\css"));
     });
       gulp.watch("img/**/*",async ()=>{
         gulp.src("img/**/*")
         .pipe(imagemin())
-        .pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoudo\\img"));
+        .pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoduo\\img"));
     });
       gulp.watch("sass/**/*.scss",async ()=>{
         gulp.src("sass/**/*.scss")
         .pipe(sass())
         .pipe(gulp.dest("C:\\Pinduoduo\\css"));
     });
+
+    gulp.watch("php/**/*",async ()=>{
+      gulp.src("php/**/*")
+      .pipe(gulp.dest("C:\\phpStudy\\WWW\\Pinduoduo\\php"));
+  });
 })
